@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <script src="js/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script src="js/pos.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <script>
+        
+
+    </script>
+    <body>
+     
+    
+         <nav>
+    <ul id="slide-out" class="side-nav">
+    <li><a href="tellerview.html">Make transaction</a></li>
+    <li><a href="sales.html">Sales</a></li>
+  
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+</nav>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <span>
+        <div class="input-field col s12">
+          <input placeholder="Enter Customer number" id="phonenum" type="text" class="validate">
+        </div>
+        </span>
+        <span class="input-field col s12 m6">
+          <input placeholder="Enter Barcode or scan" id="barcodet" type="text" class="validate">
+          <a class="waves-effect waves-light btn" onclick="">Scan</a>
+        </span>
+         <span class="input-field col s12 m6">
+          <input placeholder="Enter Quantity" id="quantityt" type="text" class="validate">
+          <a class="waves-effect waves-light btn" onclick="addToCart()">Add to cart</a>
+        </span>
+
+      </div>
+    </form>
+
+  </div>
+      <div class="row">
+          <ul class="collection">
+      
+          </ul>
+      </div>
+      <div class="totalLabel">
+      
+      </div>
+      <div class='row'>
+          <a class="waves-effect waves-light btn" style="width:100%"onclick="recordSales()">Add to cart</a>
+       </div>
+    </body>
+  </html>
+        
