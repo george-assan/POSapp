@@ -46,7 +46,7 @@
            $ ( ".collection" ).append (panels);
            var amount = obj.productobj[i].unitprice * quantity
            totalAmount = totalAmount + amount;
-           $ ( ".totalLabel" ).html("<h2 style='font-family:arial'>Total: "+totalAmount+" "+cartArrayForBarcode.length +"</h2>");
+           $ ( ".totalLabel" ).html("<h2 style='font-family:arial'>Total: "+totalAmount+"</h2>");
          }
          else{
         
