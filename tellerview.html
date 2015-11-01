@@ -7,7 +7,7 @@
       <script src="js/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
       <script src="js/pos.js"></script>
-      <script src="cordova.js"</script>
+      <script src="cordova.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -15,7 +15,7 @@
         function scan(){
 	     cordova.plugins.barcodeScanner.scan(
       function (result) {
-       var barcode = document.getElementById("phonenum");
+       var barcode = document.getElementById("barcodet");
          barcode.value= ""+ result.text; 
       }, 
       function (error) {
